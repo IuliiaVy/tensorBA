@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гид по идеальной смене администратора | Oh, Pretty People</title>
+    <!-- Подключение Tailwind CSS для стилизации -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Подключение шрифтов Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@1,400&display=swap" rel="stylesheet">
+    <style>
+        /* Основные стили для страницы */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F7F4; /* Светло-бежевый фон для элегантности */
+        }
+        h1, h2, h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+        }
+        .subtitle, .footer-text {
+            font-family: 'Lora', serif;
+            font-style: italic;
+        }
+        /* Контейнер, имитирующий лист A4 */
+        .a4-container {
+            max-width: 800px; /* Ограничение ширины для читаемости на больших экранах */
+            margin: 2rem auto;
+            padding: 3rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        /* Адаптивность для мобильных устройств */
+        @media (max-width: 768px) {
+            .a4-container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.75rem;
+            }
+        }
+        
+        /* Стили только для печати */
+        @media print {
+            body {
+                background-color: white;
+            }
+            .a4-container {
+                box-shadow: none;
+                margin: 0;
+                padding: 0;
+                max-width: 100%;
+                border-radius: 0;
+            }
+             header img {
+                 /* Скрываем логотип-заглушку при печати, т.к. он не несет ценности */
+                display: none;
+            }
+            main {
+                /* Меняем grid-макет на блочный для корректного переноса страниц */
+                display: block;
+            }
+            /* Предотвращаем разрыв блоков (Утро, День, Вечер) между страницами */
+            main > div {
+               break-inside: avoid;
+               page-break-inside: avoid;
+               margin-bottom: 2rem; /* Добавляем отступ между блоками на печати */
+               border: 1px solid #EEE; /* Добавляем легкую рамку для визуального разделения */
+               background-color: transparent !important;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="a4-container">
+        <!-- ШАПКА / HEADER -->
+        <header class="text-center mb-12">
+            <img src="https://placehold.co/150x150/EAE0D5/5E503F?text=Oh%2C+Pretty%0APeople&font=lora" alt="Логотип Oh, Pretty People" class="mx-auto mb-6 w-32 h-32 rounded-full border-4 border-white shadow-md">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Гид по идеальной смене администратора</h1>
+            <p class="subtitle text-md md:text-lg text-gray-600 max-w-3xl mx-auto">
+                Ваш ключ к успешному дню и восторженным отзывам клиентов! 
+Этот чек-лист — ваш личный навигатор в Saby Clients, который поможет провести смену легко и продуктивно, даря гостям первоклассный сервис и заботу.
+            </p>
+        </header>
+
+        <!-- ТРИ КОЛОНКИ -->
+        <main class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            
+            <!-- КОЛОНКА 1: Утро -->
+            <div class="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">✅ Утро: До открытия</h3>
+                <p class="text-sm text-gray-500 mb-6 font-semibold">Подготовка к приему клиентов.</p>
+                <ul class="space-y-4 text-gray-700">
+                    <li>
+                        <span class="font-semibold">▢ Проверить журнал записей.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: раздел «Запись».</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Подтвердить визиты.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: «Общение с клиентами».</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Проверить входящие сообщения.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Ответить, обработать заявки.</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Подготовить кассу.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: операция «Внесение».</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Проверить чистоту и порядок.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Ресепшен, зона ожидания.</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- КОЛОНКА 2: День -->
+            <div class="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">✅ День: В течение смены</h3>
+                <p class="text-sm text-gray-500 mb-6 font-semibold">Сервис и учет всех операций.</p>
+                <ul class="space-y-4 text-gray-700">
+                     <li>
+                        <span class="font-semibold">▢ Встречать и регистрировать клиентов.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: создать карточку для нового клиента.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Консультировать по услугам и акциям.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: «Каталог» и «Программы лояльности».</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Управлять записью.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Оперативно вносить новые визиты, переносы и отмены.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Принимать оплату.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: оформить продажу из журнала.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Продавать товары с витрины.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Провести продажу через кассу.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Работать с базой клиентов.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Дополнять карточки, объединять дубли.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Отвечать на звонки и сообщения.</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- КОЛОНКА 3: Вечер -->
+            <div class="bg-gray-50/70 p-6 rounded-xl border border-gray-200/80">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">✅ Вечер: Завершение дня</h3>
+                <p class="text-sm text-gray-500 mb-6 font-semibold">Закрытие дня и подготовка к завтра.</p>
+                <ul class="space-y-4 text-gray-700">
+                    <li>
+                        <span class="font-semibold">▢ Проверить визиты за день.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: все записи закрыты, отменены или перенесены.</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Снять кассу.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: отчет по кассе, операция «Изъятие».</p>
+                    </li>
+                    <li>
+                        <span class="font-semibold">▢ Подготовить отчет за день.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Saby Clients: «Контроль и отчеты».</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Просмотреть записи на завтра.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Ознакомиться с расписанием.</p>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Привести в порядок рабочее место.</span>
+                    </li>
+                     <li>
+                        <span class="font-semibold">▢ Закрыть салон.</span>
+                        <p class="text-sm text-gray-600 pl-6 mt-1">▪️ Выключить приборы, закрыть двери, поставить на охрану.</p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <!-- ПОДВАЛ / FOOTER -->
+        <footer class="text-center pt-8 mt-12 border-t border-gray-200">
+            <p class="footer-text text-sm text-gray-500">
+                Oh, Pretty People | 2025 | Желаем продуктивного дня!
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
